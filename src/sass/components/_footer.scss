@@ -1,0 +1,34 @@
+.footer {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+
+    &__menu {
+        ul {
+            gap: 20px;
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 15px;
+                    font-weight: 500;
+                    @media screen and (max-width:400px) {
+                        font-size: 12px;
+                       }
+                }
+            }
+        }
+    }
+
+    &__text {
+       @media screen and (max-width:400px) {
+        font-size: 12px;
+       }
+    }
+    &__line{
+        transform: translateY(-30px);
+        border-bottom: 1px solid #000;
+    }
+}

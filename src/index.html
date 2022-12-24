@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEMPLATE</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   
+    <style>
+        .content__sidebar{
+            background-color: rgb(240, 239, 239);
+         
+       
+        }
+        .content__pages{
+            background-color: rgb(226, 227, 228);
+            width: 100%;
+        }
+    </style>
+
+
+    <section class="content d-flex">
+        <div class="content__sidebar">
+            @@include("components/_sidebar.html")
+        </div>
+       <div class="content__pages pages__tabs">
+            <div class="pages actine" data-tabs="1">
+                @@include("pages/page-dashboard.html")
+            </div>
+            <div class="pages d-none" data-tabs="2">
+                @@include("pages/page-profile.html")
+            </div>
+            @@include("components/_footer.html")
+       </div>
+    </section>
+    @@include("components/_header.html")
+
+    @@include("icons/_icons.html")
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

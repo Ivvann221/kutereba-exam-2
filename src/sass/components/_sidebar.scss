@@ -1,0 +1,151 @@
+.nav__tabs{
+  
+    .item{
+        height: 40px;
+        width: 180px;
+       color: rgb(105, 107, 109);
+        margin: 12px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: 0.8s;
+         svg{
+            width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    fill: grey !important;
+        }
+        &.active{
+            background-color: $secondary-two-color;
+            color: rgb(255, 255, 255);
+            transition: 0.8s;
+        }
+        
+    }
+}
+.active svg{
+    fill: #fff !important;
+}
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: rgb(47, 110, 165) !important;
+
+  
+    &__title { 
+       
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+    }
+
+    // .sidebar__line
+
+    &__line {
+        height: 1px;
+        border-bottom: 1px solid #000;
+        width: 100%;
+    }
+}
+
+.b-a {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 6px;
+    min-width: 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.95);
+    
+}
+
+.menu-collapsed {
+    transition: all .25s;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    @media screen and (max-width:799px) {
+        display: block !important;
+    }
+    
+    .sidebar{
+        transition: all 0s;
+        position: fixed;
+        left: -9000px;
+        
+    }
+}
+
+.bar {
+    @extend .b-a;
+    position: absolute;
+    left: 0px;
+    top: 33px;
+    &:before {
+        @extend .b-a;
+        top: -8px;
+    }
+
+    &:after {
+        @extend .b-a;
+        top: 8px;
+    }
+}
+
+.b-a-expanded {
+    transition: all .25s;
+    top: -0px;
+}
+
+.menu-expanded {
+   
+    transition: all .25s;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    left: 0px;
+    z-index: 10;
+    @media screen and (max-width: 700px) {
+        position: absolute;
+    top: 0;
+    left: 0;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }
+    .sidebar {
+        transition: all 0s;
+        position: relative;
+        left: 0;
+        z-index: 2;
+        margin-top: 100px;
+    }
+
+
+    .bar {
+        background-color: transparent;
+        transition: all .25s;
+       left: 10px;
+       
+
+        &:before {
+            @extend .b-a-expanded;
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            @extend .b-a-expanded;
+            transform: rotate(-45deg);
+        }
+    }
+}
+#none{
+    @media screen and (max-width:799px) {
+        display: none;
+    }
+  }
