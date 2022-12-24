@@ -70,6 +70,10 @@ background-color: $secondary-two-color;
     border-radius: 0px;
     font-size: 13px;
     background-color: $secondary-two-color;
+    &:hover{
+        background-color: $secondary-two-color;
+     
+    }
 }
 .btn-primary {
 }
