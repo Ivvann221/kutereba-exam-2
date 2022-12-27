@@ -1,2 +1,339 @@
+<div class="dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="dashboard__title">
+                    <h1>
+                        Dashboard
+                    </h1>
+                </div>
+                <div class="row d-flex">
+                    <div class="item-width col-6 col-lg-3 ml-4">
+                        <div class="item active">
+                            <div class="item__icon">
+                                <img src="img/data_white.svg" alt="">
+                            </div>
+                            <div class="item__name">
+                                <p>Used space</p>
+                            </div>
+                            <div class="item__information">
+                                <p>49/50 GB</p>
+                            </div>
+                            <div class="item__line"></div>
+                            <div class="item__text">
+                                <div class="item__text_img">
+                                    <img src="img/alert.png" alt="">
+                                </div>
+                                <div class="item__text_text">Get more space</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-width col-6 col-lg-3">
+                        <div class="item">
+                            <div class="item__icon item__icon-yellow">
+                                <img src="img/shop_white.svg" alt="">
+                            </div>
+                            <div class="item__name">
+                                <p>Revenue</p>
+                            </div>
+                            <div class="item__information">
+                                <p>$ 34,245</p>
+                            </div>
+                            <div class="item__line"></div>
+                            <div class="item__text">
+                                <div class="item__text_img">
+                                    <img src="img/calendar.png" alt="">
+                                </div>
+                                <div class="item__text_text">
+                                    <p>last 24 Hourse</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-width col-6 col-lg-3">
+                        <div class="item">
+                            <div class="item__icon item__icon-blue">
+                                <img src="img/tag_white.svg" alt="">
+                            </div>
+                            <div class="item__name">
+                                <p>Fixed Issues</p>
+                            </div>
+                            <div class="item__information">
+                                <p>75</p>
+                            </div>
+                            <div class="item__line"></div>
+                            <div class="item__text">
+                                <div class="item__text_img">
+                                    <img src="img/down.png" alt="">
+                                </div>
+                                <div class="item__text_text">
+                                    <p>Tracked from GitHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-width col-6 col-lg-3">
+                        <div class="item">
+                            <div class="item__icon item__icon-red">
+                                <img src="img/paperplane_white.svg" alt="">
+                            </div>
+                            <div class="item__name">
+                                <p>Follovers</p>
+                            </div>
+                            <div class="item__information">
+                                <p>+ 245</p>
+                            </div>
+                            <div class="item__line"></div>
+                            <div class="item__text">
+                                <div class="item__text_img">
+                                    <img src="img/time.png" alt="">
+                                </div>
+                                <div class="item__text_text">
+                                    <p>Just Updated</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <div class="item-two">
+                                    <div class="item-two__img">
+                                        <canvas id="myChartt"></canvas>
+                                    </div>
+                                    <div class="item-two__title">
+                                        <p>Daily Sales</p>
+                                    </div>
+                                    <div class="item-two__subtitle">
+                                        <p>55% increase in today sales</p>
+                                    </div>
+                                    <div class="item__line"></div>
+                                    <div class="item__text">
+                                        <div class="item__text_img">
+                                            <img src="img/time.png" alt="">
+                                        </div>
+                                        <div class="item__text_text">
+                                            <p>Updated 4 minute ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="item-two">
+                                    <div class="item-two__img item-two__img-yellow">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <div class="item-two__title">
+                                        <p>Email Subscription</p>
+                                    </div>
+                                    <div class="item-two__subtitle">
+                                        <p>Last Campaing Performance </p>
+                                    </div>
+                                    <div class="item__line"></div>
+                                    <div class="item__text">
+                                        <div class="item__text_img">
+                                            <img src="img/time.png" alt="">
+                                        </div>
+                                        <div class="item__text_text">
+                                            <p>Compaing sent 2 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="item-two">
+                                    <div class="item-two__img item-two__img-blue">
+                                        <canvas id="myCharttt"></canvas>
+                                    </div>
+                                    <div class="item-two__title">
+                                        <p>Complete Tasks</p>
+                                    </div>
+                                    <div class="item-two__subtitle">
+                                        <p>Last Campaing Performance</p>
+                                    </div>
+                                    <div class="item__line"></div>
+                                    <div class="item__text">
+                                        <div class="item__text_img">
+                                            <img src="img/time.png" alt="">
+                                        </div>
+                                        <div class="item__text_text">
+                                            <p>Compaing event 2 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
 
-    @@include("../components/_dashboard.html") 
+
+                    <div class="col-12 col-lg-6">
+                        <div class="items-thre">
+
+                            <div class="template-tabs">
+                                <div class="nav__tab d-flex">
+                                    <div class="nav__tab_title">
+                                        <p>Tasks:</p>
+                                    </div>
+                                    <div id="tab-01" class="item-tabs active-tabs" data-tabs="01"><img src="img/bug.svg"
+                                            alt="">
+                                        <p>Bugs</p>
+                                    </div>
+                                    <div id="tab-02" class="item-tabs" data-tabs="02"><img src="img/web.svg" alt="">
+                                        <p>Website</p>
+                                    </div>
+                                    <div id="tab-03" class="item-tabs" data-tabs="03"><img src="img/cloud.svg" alt="">
+                                        <p>Server</p>
+                                    </div>
+                                </div>
+
+                                <div class="content-tabs" data-tabs="01">
+                                    <div class="content-tabs__item d-flex align-items-center" id="element-one">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="for-one">
+                                            <label class="form-check-label" for="for-one" id="click-one">
+                                                ll Lorem ipsum dolor sit amet sit at consectetur adipisicing elit.
+                                            </label>
+                                        </div>
+                                        <div class="content-tabs__item_img d-flex">
+                                            <img src="img/edit.png" alt="">
+                                            <img id="remove-one" src="img/remove.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-tabs__item d-flex align-items-center" id="element-two">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="for-two">
+                                            <label class="form-check-label" for="for-two" id="click-two">
+                                                Lorem ipsum dolor sit amet sit at consectetur adipisicing elit.
+                                            </label>
+                                        </div>
+                                        <div class="content-tabs__item_img d-flex">
+                                            <img src="img/edit.png" alt="">
+                                            <img id="remove-two" src="img/remove.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-tabs__item d-flex align-items-center" id="element-thre">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="for-thre">
+                                            <label class="form-check-label" for="for-thre" id="click-thre">
+                                                Lorem ipsum dolor sit amet sit at consectetur adipisicing elit.
+                                            </label>
+                                        </div>
+                                        <div class="content-tabs__item_img d-flex">
+                                            <img src="img/edit.png" alt="">
+                                            <img id="remove-thre" src="img/remove.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-tabs__item d-flex align-items-center" id="element-four">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="for-four">
+                                            <label class="form-check-label" for="for-four" id="click-four">
+                                                Lorem ipsum dolor sit amet sit at consectetur adipisicing elit.
+                                            </label>
+                                        </div>
+                                        <div class="content-tabs__item_img d-flex">
+                                            <img src="img/edit.png" alt="">
+                                            <img id="remove-four" src="img/remove.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-tabs d-none" data-tabs="02">Content 2</div>
+                            <div class="content-tabs d-none" data-tabs="03">Content 3</div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="items-thre">
+
+                            <div class="template-tabs">
+                                <div class="nav__tab nav__tab-blue">
+                                    <div class="nav__tab_title nav__tab_title-font">
+                                        <p class="m-0 pt-4">Employees Stats</p>
+                                    </div>
+                                    <div class="nav__tab_subtitle">
+                                        <p>New employees on 19th September, 2019</p>
+                                    </div>
+                                </div>
+
+                                <div class="content-information content-information-color d-flex ">
+                                    <div class="content-information__id ">
+                                        <p>ID</p>
+                                    </div>
+                                    <div class="content-information__name">
+                                        <p>Name</p>
+                                    </div>
+                                    <div class="content-information__Salary">
+                                        <p>Salary</p>
+                                    </div>
+                                    <div class="content-information__Country">
+                                        <p>Country</p>
+                                    </div>
+                                </div>
+                                <div class="content-information d-flex ">
+                                    <div class="content-information__id">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="content-information__name">
+                                        <p>Dakota Rice</p>
+                                    </div>
+                                    <div class="content-information__Salary">
+                                        <p>$36.738</p>
+                                    </div>
+                                    <div class="content-information__Country">
+                                        <p>Niger</p>
+                                    </div>
+                                </div>
+                                <div class="content-information d-flex ">
+                                    <div class="content-information__id">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="content-information__name">
+                                        <p>Dakota Rice</p>
+                                    </div>
+                                    <div class="content-information__Salary">
+                                        <p>$36.738</p>
+                                    </div>
+                                    <div class="content-information__Country">
+                                        <p>Niger</p>
+                                    </div>
+                                </div>
+                                <div class="content-information d-flex">
+                                    <div class="content-information__id">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="content-information__name">
+                                        <p>Dakota Rice</p>
+                                    </div>
+                                    <div class="content-information__Salary">
+                                        <p>$36.738</p>
+                                    </div>
+                                    <div class="content-information__Country">
+                                        <p>Niger</p>
+                                    </div>
+                                </div>
+                                <div id="bd" class="content-information d-flex">
+                                    <div class="content-information__id">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="content-information__name">
+                                        <p>Dakota Rice</p>
+                                    </div>
+                                    <div class="content-information__Salary">
+                                        <p>$36.738</p>
+                                    </div>
+                                    <div class="content-information__Country">
+                                        <p>Niger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

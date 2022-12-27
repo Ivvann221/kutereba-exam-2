@@ -30,3 +30,122 @@ $('.item-tabs').on('click', function () {
 $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
 });
+$("#for-one").click(function() {
+  $("#click-one").toggleClass("none");
+});
+$("#for-two").click(function() {
+  $("#click-two").toggleClass("none");
+});
+$("#for-thre").click(function() {
+  $("#click-thre").toggleClass("none");
+});
+$("#for-four").click(function() {
+  $("#click-four").toggleClass("none");
+});
+
+
+$("#remove-one").click(function() {
+  $("#element-one").toggleClass("d-none");
+});
+$("#remove-two").click(function() {
+  $("#element-two").toggleClass("d-none");
+});
+$("#remove-thre").click(function() {
+  $("#element-thre").toggleClass("d-none");
+});
+
+$("#remove-four").click(function() {
+  $("#element-four").toggleClass("d-none");
+});
+
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['', '', '', '', '', '', '', '', '', ''],
+    datasets: [{
+      data: [12, 19, 7, 10, 15, 12, 19, 7, 10, 17],
+      backgroundColor: '#fff',
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: false,
+        display: false
+        
+      },
+      x: {
+        display: false
+      }
+    }
+  }
+});
+
+
+const ctxx = document.getElementById('myChartt');
+new Chart(ctxx, {
+  type: 'bar',
+  data: {
+    labels: ['', '', '', '', '', '', '', '', '', ''],
+    datasets: [{
+      data: [12, 19, 7, 10, 15, 12, 19, 7, 10, 17],
+      backgroundColor: '#fff',
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: false,
+        display: false
+        
+      },
+      x: {
+        display: false
+      }
+    }
+  }
+});
+
+
+const ctxxx = document.getElementById('myCharttt');
+new Chart(ctxxx, {
+  type: 'bar',
+  data: {
+    labels: ['', '', '', '', '', '', '', '', '', ''],
+    datasets: [{
+      data: [12, 19, 7, 10, 15, 12, 19, 7, 10, 17],
+      backgroundColor: '#fff',
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: false,
+        display: false
+        
+      },
+      x: {
+        display: false
+      }
+    }
+  }
+});
+

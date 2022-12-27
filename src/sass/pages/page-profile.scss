@@ -1,106 +1,94 @@
 .profile {
-
-   
-
     &__title {
-        margin-top: 20px;
+        margin-top: 30px;
+        font-size: 19px;
         margin-bottom: 40px;
-    }
 
-    
-
-    &__content {
-    
+        @media screen and (max-width:799px) {
+            margin-left: 50px;
+        }
     }
 }
+
 .edit {
-    margin: 12px !important;
-    width: 65%;
-    margin: 12px;
     background-color: #fff;
     margin-bottom: 85px !important;
     box-shadow: 2px 2px 2px 2px grey;
     order: 1;
     padding: 20px;
-    
-    @media screen and (max-width:1000px) {
+
+    @media screen and (max-width:997px) {
         order: 2;
-        width: 96%;
-        margin-top: 50px !important;
-        margin-bottom: 50px !important;
+        margin-top: 50px;
+
     }
-    @media screen and (max-width:576px) {
-        width: 95%;
-    }
-    @media screen and (max-width:476px) {
-        width: 92%;
-    }
-    
 }
+
 .information {
-    
     padding: 20px;
     transform: translatey(-40px);
     left: 0;
-background-color: $secondary-two-color;
+    background-color: $primary-four-color;
 
     &__title {
         color: #fff;
 
     }
+
     &__subtitle {
         line-height: 1.2;
         color: #fff;
         margin-top: 10px;
     }
 }
-.needs-validation {
-}
+
 .form-label {
     margin-top: 20px;
 }
+
 .form-control {
     padding: 0;
     border-radius: 0px;
     border: none;
     border-bottom: 1px solid #000;
+
+    &:focus {
+        box-shadow: none;
+        border-bottom: 1px solid #000;
+    }
 }
+
 .btn {
     width: 49%;
     border-radius: 0px;
     font-size: 13px;
-    background-color: $secondary-two-color;
-    &:hover{
-        background-color: $secondary-two-color;
-     
+    background-color: $primary-four-color;
+    color: #fff !important;
+
+    &:hover {
+        background-color: $primary-four-color;
+
     }
 }
-.btn-primary {
-}
+
 .user {
-  margin: 12px;
-    height: 100%;
-    width: 28%;
     box-shadow: 2px 2px 2px 2px grey;
-padding: 20px;  
-   background-color: #fff;
-   order: 2;
-   @media screen and (max-width:1000px) {
-    order: 1;
-    width: 96%;
-}
-@media screen and (max-width:576px) {
-    width: 95%;
-}
-@media screen and (max-width:476px) {
-    width: 92%;
-}
+    padding: 20px;
+    background-color: #fff;
+    order: 2;
+
+    @media screen and (max-width:997px) {
+        order: 1;
+
+    }
+
     &__logo {
         transform: translateY(-50px);
         display: flex;
         justify-content: center;
         border-radius: 50%;
-        img{
+
+        img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -108,25 +96,20 @@ padding: 20px;
         }
     }
 
-    // .user__text
-
     &__text {
         margin-top: -20px;
     }
-
-    // .user__name
 
     &__name {
         font-weight: 700;
         margin-top: 15px;
     }
 
-    // .user__information
-
     &__information {
         margin-top: 15px;
     }
 }
-label{
+
+label {
     font-size: 13.5px;
 }

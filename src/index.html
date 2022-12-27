@@ -14,12 +14,19 @@
     <style>
         .content__sidebar{
             background-color: rgb(240, 239, 239);
-         
-       
+            min-height: 100%; 
+        }
+        @media screen and (max-width:799px) {
+            .content__sidebar{
+                
+            }
         }
         .content__pages{
             background-color: rgb(226, 227, 228);
             width: 100%;
+        }
+        .none{
+            text-decoration: line-through;
         }
     </style>
 
@@ -29,19 +36,27 @@
             @@include("components/_sidebar.html")
         </div>
        <div class="content__pages pages__tabs">
-            <div class="pages actine" data-tabs="1">
+            <div class="pages active" data-tabs="1">
                 @@include("pages/page-dashboard.html")
             </div>
             <div class="pages d-none" data-tabs="2">
                 @@include("pages/page-profile.html")
             </div>
+            <div class="pages d-none" data-tabs="3">
+                @@include("pages/page-map.html")
+            </div>
+            <div class="pages d-none" data-tabs="4">
+                @@include("pages/page-notification.html")
+            </div>
+            <div class="pages d-none" data-tabs="5">
+                @@include("pages/page-support.html")
+            </div>
             @@include("components/_footer.html")
        </div>
     </section>
-    @@include("components/_header.html")
 
     @@include("icons/_icons.html")
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
