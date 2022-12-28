@@ -8,13 +8,11 @@
 //@import "libs/slick-theme.scss";
 @import "libs/slick.scss";
 
-@import "components/header";
 @import "components/sidebar";
-@import "components/dashboard";
 @import "components/footer";
 
 
-
+@import "pages/page-dashboard.scss";
 @import "pages/page-profile.scss";
 @import "pages/page-notification.scss";
 @import "pages/page-support.scss";

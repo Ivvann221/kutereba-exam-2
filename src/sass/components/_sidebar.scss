@@ -6,7 +6,7 @@ align-items: center;
       height: 100%;
         width: 180px;
        color: rgb(105, 107, 109);
-        margin: 12px;
+        margin: 5px 12px;
         text-align: center;
         vertical-align: middle;
         cursor: pointer;
@@ -28,11 +28,12 @@ svg{
 
 }
 .sidebar {
-    width: 230px;
     height: 100%;
     background-color: rgb(240, 239, 239);
-    
     z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
   
     &__title { 
        
@@ -106,7 +107,7 @@ svg{
 
 .menu-expanded {
    
-    transition: all 0;
+    transition: all 0s;
     text-align: center;
     min-height: 100%;
     border-radius: 0px;
